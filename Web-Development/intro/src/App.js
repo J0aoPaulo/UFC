@@ -1,12 +1,12 @@
-import Pai from "./components/Atividade01/Questao01/01Pai";
+//import Pai from "./components/Atividade01/Questao01/01Pai";
 //import * as PC from "./components/Atividade01/02MeuPc";
 //import * as Game from './components/Atividade01/03Batalha'
-//import SistemaSolar from "./components/04-Children/SistemaSolar";
+import Galaxia from "./components/04-Children/Galaxia";
 
 function App() {
   return (
     <div>
-      <Pai></Pai>
+      {/*<Pai></Pai>*/}
 
       {/*
       <PC.PlacaMae nome="b550M" preco={1569.45.toFixed(2)}/>
@@ -20,7 +20,7 @@ function App() {
       </Game.World>
       */}
 
-      
+      <Galaxia></Galaxia>   
     </div>
   );
 }
