@@ -1,11 +1,12 @@
-//import Pai from "./components/Atividade01/Questao01/01Pai";
+import Pai from "./components/Atividade01/Questao01/01Pai";
 //import * as PC from "./components/Atividade01/02MeuPc";
-import * as Game from './components/Atividade01/03Batalha'
+//import * as Game from './components/Atividade01/03Batalha'
+//import SistemaSolar from "./components/04-Children/SistemaSolar";
 
 function App() {
   return (
     <div>
-      {/*<Pai></Pai>*/}
+      <Pai></Pai>
 
       {/*
       <PC.PlacaMae nome="b550M" preco={1569.45.toFixed(2)}/>
@@ -13,9 +14,12 @@ function App() {
       <PC.PlacaDeVideo nome="RTX 2060 Super" preco={1800.00.toFixed(2)}/>
       */}
 
+      {/*
       <Game.World>
-        <Game.Arena name="Soul Society"/>
+      <Game.Arena name="Soul Society"/> 
       </Game.World>
+      */}
+
       
     </div>
   );
