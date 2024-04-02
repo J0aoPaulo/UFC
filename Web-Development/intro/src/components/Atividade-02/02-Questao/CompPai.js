@@ -1,10 +1,14 @@
 import PokemonContexto from "./PokeContext"
 import CompFilho from "./CompFilho"
+import { useState } from "react"
 
 const CompPai = () => {
 
-    const number = 10
+    const [number, setNumber] = useState(1)
 
+    const apertouBotao = () => {
+        setNumber(number + 1)
+    }
     return (
         <PokemonContexto.Provider value = {number}>
             <div>
@@ -15,6 +19,9 @@ const CompPai = () => {
                 alt="Pokemon aleatorio"
                 />
                 <CompFilho></CompFilho>
+                <button onClick={alert(apertouBotao)}>
+                    mudar pokemon
+                </button>
             </div>
         </PokemonContexto.Provider>
     )
