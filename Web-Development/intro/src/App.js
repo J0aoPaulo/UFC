@@ -1,22 +1,18 @@
 //import Pai from "./components/Atividade01/Questao01/01Pai";
 //import * as PC from "./components/Atividade01/02MeuPc";
-import * as Game from './components/Atividade01/03Batalha'
+//import * as Game from './components/Atividade01/03Batalha'
+//import Galaxia from "./components/04-Children/Galaxia";
+//import Estado from "./components/06-Estados/Estado";
+//import Pokemon from "./components/05-Estados/Pokemon";
+//import { CompA } from "./components/06-Context/Context";
+//import FunctionContextA from "./components/Atividade-02/FunctionContextA";
+import CompPai from "./components/Atividade-02/02-Questao/CompPai";
 
 function App() {
   return (
     <div>
-      {/*<Pai></Pai>*/}
-
-      {/*
-      <PC.PlacaMae nome="b550M" preco={1569.45.toFixed(2)}/>
-      <PC.Memoria nome="Asgard 3600mhz" preco={600.00.toFgixed(2)}/>
-      <PC.PlacaDeVideo nome="RTX 2060 Super" preco={1800.00.toFixed(2)}/>
-      */}
-
-      <Game.World>
-        <Game.Arena name="Soul Society"/>
-      </Game.World>
-      
+      <h1>Desenvolvimento de software para Web!</h1>
+      <CompPai></CompPai>
     </div>
   );
 }
