@@ -8,4 +8,4 @@ const Pai = () => {
     )
 }
 
-export default Pai
+export default 

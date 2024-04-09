@@ -9,7 +9,7 @@ function App() {
 
       {/*
       <PC.PlacaMae nome="b550M" preco={1569.45.toFixed(2)}/>
-      <PC.Memoria nome="Asgard 3600mhz" preco={600.00.toFixed(2)}/>
+      <PC.Memoria nome="Asgard 3600mhz" preco={600.00.toFgixed(2)}/>
       <PC.PlacaDeVideo nome="RTX 2060 Super" preco={1800.00.toFixed(2)}/>
       */}
 
