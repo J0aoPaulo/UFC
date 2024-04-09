@@ -6,7 +6,7 @@
 //import Pokemon from "./components/05-Estados/Pokemon";
 //import { CompA } from "./components/06-Context/Context";
 //import FunctionContextA from "./components/Atividade-02/FunctionContextA";
-import CompPai from "./components/Atividade-02/02-Questao/CompPai";
+//import CompPai from "./components/Atividade-02/02-Questao/CompPai";
 
 function App() {
   return (
