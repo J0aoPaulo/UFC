@@ -1,0 +1,37 @@
+Props Drilling é um problema comum em React onde as props precisam ser passadas por vários níveis de componentes, mesmo que apenas um componente no meio precise dessas props. Isso pode tornar o código difícil de manter e entender.
+
+O Context do React oferece uma maneira de compartilhar valores entre componentes sem precisar passar explicitamente props por cada nível da árvore de componentes.
+
+#### Sem Context:
+
+```jsx
+// App.js
+import React from 'react';
+import ComponentA from './ComponentA';
+
+const App = () => {
+  const value = "Valor compartilhado";
+
+  return <ComponentA value={value} />;
+};
+
+export default App;
+
+// ComponentA.js
+import React from 'react';
+import ComponentB from './ComponentB';
+
+const ComponentA = ({ value }) => {
+  return <ComponentB value={value} />;
+};
+
+export default ComponentA;
+
+// ComponentB.js
+import React from 'react';
+
+const ComponentB = ({ value }) => {
+  return <div>{value}</div>;
+};
+
+export default ComponentB;
