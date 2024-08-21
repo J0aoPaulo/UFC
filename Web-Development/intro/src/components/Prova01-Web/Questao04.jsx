@@ -1,20 +1,29 @@
 import React, { useEffect, useState } from "react";
 
-const Questao03 = () => {
+const Questao04 = () => {
   // Armazenamento das capitais com maior e menor população
   const [maiorPopulacao, setMaiorPopulacao] = useState(null);
   const [menorPopulacao, setMenorPopulacao] = useState(null);
 
-  // Função assíncrona para buscar os dados requisitados
+  const data = [
+    {"capital":["Dublin"],"population":4994724},
+    {"capital":["Nicosia"],"population":1207361},
+    {"capital":["Madrid"],"population":47351567}
+  ];
+
+  // Função assíncrona para buscar os dados da Promise
   const fetchData = async () => {
     try {
-      const response = await fetch("https://restcountries.com/v3.1/region/europe?fields=capital,population");
-      const data = await response.json();
+      const dataPromise = new Promise((resolve) => {
+        resolve(data);
+      });
 
-      let maior = data[0];
-      let menor = data[0];
+      const dataResolved = await dataPromise;
 
-      data.forEach(country => {
+      let maior = dataResolved[0];
+      let menor = dataResolved[0];
+
+      dataResolved.forEach(country => {
         if (country.population > maior.population) {
           maior = country;
         }
@@ -23,7 +32,6 @@ const Questao03 = () => {
         }
       });
 
-      // Atualizando os estados com as capitais encontradas
       setMaiorPopulacao(maior);
       setMenorPopulacao(menor);
     } catch (error) {
@@ -49,4 +57,4 @@ const Questao03 = () => {
   );
 };
 
-export default Questao03;
+export default Questao04;
